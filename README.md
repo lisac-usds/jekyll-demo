@@ -24,15 +24,13 @@ See [jekyll](https://jekyllrb.com/).
 ### Configuration
 - [manifest.yml](./manifest.yml)
 - [Staticfile](./Staticfile) 
-- Staticfile.auth (basic authentication, optional)
-   > <username-1>:<encrypted-password>
-   > <username-2>:<encrypted-password>
+- (optional) Staticfile.auth - basic authentication with [htpasswd](https://httpd.apache.org/docs/2.4/programs/htpasswd.html)
 
 ### Deployment
 
 > prerequisites: Cloud Foundry cli ([docs](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html)) and [cloud.gov access](https://cloud.gov/docs/getting-started/accounts/)
 
 1. Log in: `cf login --sso`
-2. Deply: `cf push`
+2. Deploy: `cf push`
 
 See: [Staticfile Buildpack](https://docs.cloudfoundry.org/buildpacks/staticfile/index.html)
